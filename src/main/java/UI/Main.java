@@ -10,12 +10,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             // Instantiate JFrame
             JFrame frame = new JFrame("AI-Aware Software Engineering Assessment System");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setSize(900, 500);
+            frame.setSize(900, 750);
             frame.setLocationRelativeTo(null);
 
             int rowNum = AssessmentFeed.getCIDs().size();
@@ -140,6 +140,9 @@ public class Main {
                 System.out.println("Design Mark: " + ((MSCStudent) s).getVeevaDesingMark());
                 System.out.println(("Explanation Mark: " + ((MSCStudent) s).getVeevaExplanationMark()));
             }
+
+            System.out.println("");
+            System.out.println("AI Discrepancy: " + isAIDiscrepancy(s));
 
             System.out.println("=============================================================");
         }

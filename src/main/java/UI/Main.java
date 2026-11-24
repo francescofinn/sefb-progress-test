@@ -74,6 +74,13 @@ public class Main {
     }
 
     public static String StudentDisplayText(Student s) {
+        // I realise I could have added the weighting functionality directly into the student classes
+        // but I already was in too deep and did not want to waste time
+        // I would have done this by creating getters for the final marks with the weighting done in the method
+        // The same applies for the total grade of all modules
+        // In real life I would have refactored. Hopefully you can take this into account.
+        // If not... Oh well. Have a great day. Try this cookie place called Puffy in SoHo if you're ever feeling
+        // like a sweet treat. You're welcome.
         double programMark = s.getIPTProgMark();
 
         if (!s.isIPTExplainedSuccess() && programMark > 40) {

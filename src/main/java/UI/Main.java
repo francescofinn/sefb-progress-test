@@ -100,7 +100,7 @@ public class Main {
                     "Weighted Module: " + 0.3 * programMark + "%<br>" +
                     "AI-Assisted Programming Test: " + finalAIMark + "%<br>" +
                     "Weighted Module: " + 0.7 * finalAIMark + "%<br>" +
-                    "Total Weighted Module Mark: " + moduleTotal + "<%<br>" +
+                    "Total Mark: " + moduleTotal + "<%<br>" +
                     "</html>";
         } else {
             double veevaMark = 0.5 * ((MSCStudent) s).getVeevaDesingMark() + 0.5 * ((MSCStudent) s).getVeevaExplanationMark();
